@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./style.css";
 
 function Page() {
     const myH1 = React.createElement(
@@ -18,7 +19,13 @@ function Page() {
         "div", null, [myH1, myP, myList, myPP]
     )
 
-    return myDiv;
+    return (
+        <>
+            <h1 className="orange">Hello World!</h1>
+            <p>First</p>
+            <p>Second</p>
+        </>
+    );
 }
 
 
